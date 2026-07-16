@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<rect width="600" height="600" rx="36" fill="#243324"/>
+<g fill="none" stroke="#D8E178" stroke-width="22">
+  <path d="M300 70l70 70-70 70-70-70z"/>
+  <path d="M300 210l95 95-95 95-95-95z"/>
+  <path d="M300 400l70 70-70 70-70-70z"/>
+  <path d="M110 300l70-70 70 70-70 70z"/>
+  <path d="M490 300l-70-70-70 70 70 70z"/>
+</g>
+</svg>
