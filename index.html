@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de" data-mode="classic">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FCFCF7">
+  <meta name="description" content="TIBEB — a one-of-one playing card deck and interactive digital experience.">
+  <title>TIBEB — Playing Cards</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Noto+Sans+Ethiopic:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="mode-wipe" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="wordmark">TIBEB®</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#deck">THE DECK</a>
+      <a href="#illustrations">ILLUSTRATIONS</a>
+      <a href="#play">WAYS TO PLAY</a>
+    </nav>
+    <span class="mode-label">CLASSIC MODE</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-pin">
+        <div class="hero-depth hero-depth-a"></div>
+        <div class="hero-depth hero-depth-b"></div>
+        <div class="hero-word hero-word-ethiopic">ጥበብ</div>
+
+        <div class="gee-field" aria-hidden="true">
+          <span style="--x:4%;--y:9%;--s:.42;--r:-9deg">፩</span>
+          <span style="--x:13%;--y:27%;--s:.26;--r:7deg">፪</span>
+          <span style="--x:26%;--y:8%;--s:.36;--r:-4deg">፫</span>
+          <span style="--x:38%;--y:18%;--s:.22;--r:11deg">፬</span>
+          <span style="--x:53%;--y:7%;--s:.34;--r:-8deg">፭</span>
+          <span style="--x:69%;--y:17%;--s:.25;--r:9deg">፮</span>
+          <span style="--x:84%;--y:8%;--s:.30;--r:-11deg">፯</span>
+          <span style="--x:94%;--y:29%;--s:.20;--r:8deg">፰</span>
+          <span style="--x:6%;--y:64%;--s:.28;--r:6deg">፱</span>
+          <span style="--x:18%;--y:78%;--s:.21;--r:-7deg">፲</span>
+          <span style="--x:34%;--y:68%;--s:.33;--r:10deg">፩</span>
+          <span style="--x:49%;--y:82%;--s:.20;--r:-4deg">፫</span>
+          <span style="--x:64%;--y:72%;--s:.26;--r:7deg">፭</span>
+          <span style="--x:79%;--y:62%;--s:.30;--r:-8deg">፯</span>
+          <span style="--x:92%;--y:79%;--s:.18;--r:6deg">፱</span>
+          <span style="--x:47%;--y:39%;--s:.15;--r:-3deg">፪</span>
+          <span style="--x:61%;--y:43%;--s:.17;--r:4deg">፮</span>
+        </div>
+
+        <div class="hero-card" id="heroCard">
+          <div class="hero-card-3d" id="heroCard3d">
+            <figure class="card-side card-front">
+              <img id="heroFront" src="assets/images/hero-card-01.png" alt="TIBEB illustrated playing card">
+            </figure>
+            <figure class="card-side card-back">
+              <img src="assets/images/hero-card-back.png" alt="TIBEB card back">
+            </figure>
+          </div>
+        </div>
+
+        <p class="hero-copy">A ONE-OF-ONE PLAYING CARD DECK INSPIRED BY ETHIOPIAN CRAFTSMANSHIP, GEOMETRIC ILLUSTRATION AND PERSONAL STORIES.</p>
+        <div class="hero-meta"><span>SCROLL TO REVEAL</span><span id="rotationCounter">00 / 03</span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>MORE THAN A DECK OF CARDS</span><span>A STORY YOU CAN SHUFFLE</span><span>MADE FOR ONE</span>
+        <span>MORE THAN A DECK OF CARDS</span><span>A STORY YOU CAN SHUFFLE</span><span>MADE FOR ONE</span>
+      </div>
+    </section>
+
+    <section class="chapter deck-section" id="deck">
+      <div class="chapter-number">01 / THE DECK</div>
+      <h1 class="mega-title"><span>PATTERN</span><span>BECOMES</span><span>PLAY.</span></h1>
+
+      <div class="deck-copy">
+        <p>TIBEB TRANSLATES ETHIOPIAN-INSPIRED ORNAMENTS, NATIVE ANIMALS AND CONTEMPORARY FIGURES INTO A REDUCED VISUAL SYSTEM.</p>
+      </div>
+
+      <div class="organic-pattern" id="organicPattern">
+        <div class="pattern-copy">
+          <span>FROM ONE ELEMENT TO A LIVING SYSTEM.</span>
+          <p>THE ORNAMENTS GROW ORGANICALLY, BRANCH INTO A DYNAMIC COMPOSITION AND THEN SNAP INTO THE STRUCTURE OF THE CARD BACK.</p>
+        </div>
+
+        <div class="pattern-stage">
+          <div class="organic-cluster" id="organicCluster">
+            <figure class="ornament o01"><img src="assets/images/ornament-01.png" alt=""></figure>
+            <figure class="ornament o02"><img src="assets/images/ornament-02.png" alt=""></figure>
+            <figure class="ornament o03"><img src="assets/images/ornament-03.png" alt=""></figure>
+            <figure class="ornament o04"><img src="assets/images/ornament-04.png" alt=""></figure>
+            <figure class="ornament o05"><img src="assets/images/ornament-05.png" alt=""></figure>
+            <figure class="ornament o06"><img src="assets/images/ornament-06.png" alt=""></figure>
+            <figure class="ornament o07"><img src="assets/images/ornament-07.png" alt=""></figure>
+            <figure class="ornament o08"><img src="assets/images/ornament-08.png" alt=""></figure>
+            <figure class="ornament o09"><img src="assets/images/ornament-02.png" alt=""></figure>
+            <figure class="ornament o10"><img src="assets/images/ornament-06.png" alt=""></figure>
+            <figure class="ornament o11"><img src="assets/images/ornament-04.png" alt=""></figure>
+            <figure class="ornament o12"><img src="assets/images/ornament-01.png" alt=""></figure>
+            <figure class="ornament o13"><img src="assets/images/ornament-05.png" alt=""></figure>
+            <figure class="ornament o14"><img src="assets/images/ornament-08.png" alt=""></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter story-section">
+      <div class="chapter-number">02 / THE STORY</div>
+      <div class="story-grid">
+        <h2 class="mega-title">DESIGNED<br>TO BE<br>PLAYED.</h2>
+        <div class="story-lines">
+          <article><span>THE NAME</span><p>TIBEB REFERS TO ART, CRAFTSMANSHIP AND ORNAMENTAL WOVEN DETAIL.</p></article>
+          <article><span>THE IDEA</span><p>A PERSONAL GIFT BECOMES A COMPLETE VISUAL WORLD — BUILT TO BE USED AND DISCOVERED.</p></article>
+          <article><span>THE DETAILS</span><p>DATES, INITIALS AND SMALL PERSONAL SYMBOLS ARE HIDDEN THROUGHOUT THE DECK.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter illustration-section" id="illustrations">
+      <div class="chapter-number">03 / THE ILLUSTRATIONS</div>
+      <h2 class="mega-title">EVERY FIGURE<br>HAS A PLACE.</h2>
+
+      <div class="scroll-gallery">
+        <div class="gallery-copy">
+          <span id="galleryCount">01 / 06</span>
+          <h3 id="galleryTitle">THE LION</h3>
+          <p id="galleryText">A LONG-STANDING SYMBOL OF ETHIOPIA, THE LION REPRESENTS STRENGTH, COURAGE AND RESILIENCE. DEEPLY ROOTED IN THE COUNTRY’S HISTORY, IT REMAINS ONE OF ITS MOST RECOGNIZABLE NATIONAL SYMBOLS.</p>
+        </div>
+
+        <div class="gallery-stage" id="galleryStage">
+          <div class="gallery-card gallery-card-back back-two"></div>
+          <div class="gallery-card gallery-card-back back-one"></div>
+          <figure class="gallery-card gallery-card-front" id="galleryCard">
+            <img id="galleryImage" src="assets/images/illus-lion.png" alt="The Lion illustration">
+          </figure>
+        </div>
+
+        <div class="mobile-tap-gallery" id="mobileTapGallery">
+          <button class="mobile-tap-card" id="mobileTapCard" type="button" aria-label="Show next illustration">
+            <img id="mobileTapImage" src="assets/images/illus-lion.png" alt="The Lion">
+            <span class="mobile-tap-hint">TAP FOR NEXT</span>
+          </button>
+
+          <div class="mobile-tap-meta">
+            <span id="mobileTapCount">01 / 06</span>
+            <h3 id="mobileTapTitle">THE LION</h3>
+            <p id="mobileTapText">A LONG-STANDING SYMBOL OF ETHIOPIA, THE LION REPRESENTS STRENGTH, COURAGE AND RESILIENCE. DEEPLY ROOTED IN THE COUNTRY’S HISTORY, IT REMAINS ONE OF ITS MOST RECOGNIZABLE NATIONAL SYMBOLS.</p>
+          </div>
+        </div>
+
+        <div class="gallery-progress"><span>SCROLL</span><i id="galleryProgress"></i></div>
+      </div>
+    </section>
+
+    <section class="chapter easter-section discover-section">
+      <div class="chapter-number">04 / DISCOVER</div>
+      <h2 class="mega-title">DISCOVER<br>THE DETAILS.</h2>
+
+      <div class="easter-game">
+        <div class="easter-card-wrap">
+          <img src="assets/images/discover-king.png" alt="The King card with personal design details">
+          <button class="hotspot h1" data-title="THE CROWN" data-note="THREE SUBTLE ‘G’S ARE HIDDEN IN THE CROWN — A REFERENCE TO HIS NICKNAME AND THE NAME HE ALWAYS WISHED PEOPLE WOULD CALL HIM. A SMALL PERSONAL DETAIL, QUIETLY WOVEN INTO THE DESIGN." aria-label="Discover the crown detail">+</button>
+          <button class="hotspot h2" data-title="THE NUMBER SEVEN" data-note="THE NUMBER 7 APPEARS ON THE ROBE AS A NOD TO HIS FAVORITE NUMBER. OFTEN ASSOCIATED WITH COMPLETENESS AND PERFECTION, IT HAS BECOME A MEANINGFUL SYMBOL FAR BEYOND THE CARD ITSELF." aria-label="Discover the number seven detail">+</button>
+          <button class="hotspot h3" data-title="THE FACE" data-note="THE FACIAL FEATURES ARE INSPIRED BY TRADITIONAL ETHIOPIAN CHURCH ART, KNOWN FOR ITS STYLIZED FORMS AND DISTINCTIVE ALMOND-SHAPED EYES. THIS INFLUENCE DEFINES THE VISUAL LANGUAGE OF THE ENTIRE DECK." aria-label="Discover the face detail">+</button>
+          <button class="hotspot h4" data-title="THE ORNAMENTS" data-note="THE GEOMETRIC ORNAMENTS CONNECT EVERY ILLUSTRATION ACROSS THE DECK. THEIR PATTERNS ARE INSPIRED BY THE WRAPPING PAPER FROM HIS LAST BIRTHDAY GIFT, TURNING A PERSONAL MEMORY INTO A RECURRING DESIGN ELEMENT." aria-label="Discover the ornament detail">+</button>
+        </div>
+
+        <div class="easter-panel">
+          <span id="easterCounter">SELECT A DETAIL</span>
+          <h3 id="easterTitle">THE KING</h3>
+          <p id="easterText">SELECT A MARKER TO REVEAL THE PERSONAL AND CULTURAL DETAILS WOVEN INTO THE CARD.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter numeral-section">
+      <div class="chapter-number">05 / GE'EZ NUMERALS</div>
+      <h2 class="mega-title">ONE<br>TO TEN.</h2>
+      <div class="numerals">
+        <div><b>፩</b><span>01</span></div><div><b>፪</b><span>02</span></div>
+        <div><b>፫</b><span>03</span></div><div><b>፬</b><span>04</span></div>
+        <div><b>፭</b><span>05</span></div><div><b>፮</b><span>06</span></div>
+        <div><b>፯</b><span>07</span></div><div><b>፰</b><span>08</span></div>
+        <div><b>፱</b><span>09</span></div><div><b>፲</b><span>10</span></div>
+      </div>
+    </section>
+
+    <section class="chapter play-section" id="play">
+      <div class="play-heading">
+        <div>
+          <div class="chapter-number">06 / WAYS TO PLAY</div>
+          <h2 class="mega-title" id="playTitle">KEEP IT<br>CLASSIC.</h2>
+        </div>
+
+        <button class="mode-toggle" id="modeToggle" type="button" aria-label="Switch between classic and party mode">
+          <span>CLASSIC</span><span>PARTY</span><i aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="rules" id="rules"></div>
+    </section>
+
+    <section class="final-section">
+      <div class="chapter-number">07 / FINAL WORD</div>
+      <h2>MAY<br>THE BEST<br>HAND WIN.</h2>
+      <p>ምርጡ ይሸንፍ</p>
+    </section>
+  </main>
+
+  <footer><span>TIBEB PLAYING CARDS</span><span>FIRST EDITION / ONE OF ONE / 2026</span></footer>
+</body>
+</html>
